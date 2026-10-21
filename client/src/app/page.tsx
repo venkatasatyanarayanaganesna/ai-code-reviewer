@@ -13,7 +13,6 @@ export default function Home() {
   const [analysis, setAnalysis] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [streaming, setStreaming] = useState(false);
 
   const handleAnalyze = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +23,6 @@ export default function Home() {
 
     setLoading(true);
     setError('');
-    setAnalysis(null);
 
     try {
       const result = await analyzeCode({ code, language, filename });
