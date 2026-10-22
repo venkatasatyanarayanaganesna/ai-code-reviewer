@@ -7,3 +7,6 @@ build/
 
 client/.next/
 node_modules/
+
+client/.next/
+node_modules/
